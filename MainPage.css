@@ -1,0 +1,100 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8eef8;
+    color: #333;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Space between logo and button */
+    align-items: center;
+    background: linear-gradient(to right, #d6a4d6, #fbc8d9);
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #6b426b;
+    font-family: 'Georgia', serif;
+}
+
+.register-btn {
+    margin-left: auto;
+    background-color: #fbc8d9;
+    border: none;
+    color: #333;
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+.register-btn:hover {
+    transform: scale(1.1);
+    background-color: #d6a4d6;
+}
+
+/* Main Content */
+.main-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px;
+}
+
+.panel {
+    width: 500px;
+    height: 500px;
+    border: 2px solid #d6a4d6;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-size: cover;
+    background-position: center;
+    color: white; /* Ensures text is readable over images */
+    font-weight: bold;
+}
+
+.panel h2 {
+    margin-bottom: 10px;
+    color: #6b426b;
+}
+
+.panel p {
+    display: none;
+    font-size: 0.9rem;
+}
+
+.panel:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.panel:hover p {
+    display: block;
+}
+
+#about-panel {
+    background-image: url('C:\Users\ws\Downloads\Книги эстетика.jpg'); /* Replace with your image URL */
+}
+
+/* Tasks Panel */
+#tasks-panel {
+    background-image: url('C:\Users\ws\Downloads\Poetry books 💅🏻🤍🪐.jpg'); /* Replace with your image URL */
+}
