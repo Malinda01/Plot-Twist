@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Plot Twist</title>
+    <link rel="stylesheet" href="Dashboard.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Plot Twist</div>
+       
+    </nav>
+
+    <!-- Side Navigation Panel -->
+    <div class="side-panel" id="side-panel">
+        <button onclick="loadContent('clubs')">
+            <span class="icon">📚</span> Clubs
+        </button>
+        <button onclick="loadContent('challenges')">
+            <span class="icon">🎯</span> Reading Challenges
+        </button>
+        <button onclick="loadContent('recommendations')">
+            <span class="icon">📖</span> Book Recommendations
+        </button>
+        <button onclick="loadContent('reviews')">
+            <span class="icon">✍</span> Reviews
+        </button>
+        <button onclick="loadContent('podcasts')">
+            <span class="icon">🎙</span> Podcasts
+        </button>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-dashboard" id="main-dashboard">
+        <p>Click a category on the side navigation to load content.</p>
+    </main>
+
+    <script src="Dashboard.js"></script>
+</body>
+</html>
