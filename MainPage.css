@@ -1,18 +1,126 @@
-/* General Reset */
-* {
+/* Reset and basic styles */
+body, html {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body Styling */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f8eef8;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom right, #f7d0f5, #e8d1fa);
     color: #333;
 }
 
-/* Navigation Bar */
+/* Navigation bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    background-color: #d3aee8;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.site-name {
+    font-weight: bold;
+    font-size: 26px;
+    color: #4e1b63;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffcae0;
+}
+
+.auth-buttons .btn {
+    background-color: #fff;
+    color: #4e1b63;
+    border: 2px solid #4e1b63;
+    padding: 5px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.auth-buttons .btn:hover {
+    background-color: #4e1b63;
+    color: #fff;
+}
+
+/* Main content */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #4e1b63;
+    margin-bottom: 30px;
+}
+
+.info-sections {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.info-card {
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 40px;
+    width: 500px;
+    height: 450px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.info-card h2 {
+    color: #4e1b63;
+}
+
+.icon {
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+}
+
+/* Form Page Styling */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    margin: 20px;
+}
+
+.form-container h1 {
+    color: #6b426b;
+    margin-bottom: 20px;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between; /* Space between logo and button */
@@ -28,73 +136,50 @@ body {
     font-family: 'Georgia', serif;
 }
 
-.register-btn {
-    margin-left: auto;
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    background-color: #f8eef8;
+    border: 2px solid #d6a4d6;
+    border-radius: 10px;
+    padding: 20px 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.registration-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #6b426b;
+}
+
+.registration-form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #d6a4d6;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.registration-form input:focus {
+    outline: none;
+    border-color: #d6a4d6;
+    box-shadow: 0 0 5px rgba(214, 164, 214, 0.5);
+}
+
+.registration-form .register-btn {
+    align-self: center;
     background-color: #fbc8d9;
     border: none;
-    color: #333;
-    padding: 10px 15px;
-    font-weight: bold;
+    padding: 10px 20px;
     font-size: 1rem;
+    font-weight: bold;
     cursor: pointer;
     border-radius: 5px;
     transition: transform 0.2s;
 }
 
-.register-btn:hover {
+.registration-form .register-btn:hover {
     transform: scale(1.1);
     background-color: #d6a4d6;
-}
-
-/* Main Content */
-.main-content {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 50px;
-}
-
-.panel {
-    width: 500px;
-    height: 500px;
-    border: 2px solid #d6a4d6;
-    border-radius: 10px;
-    text-align: center;
-    padding: 20px;
-    cursor: pointer;
-    overflow: hidden;
-    transition: transform 0.3s, box-shadow 0.3s;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    background-size: cover;
-    background-position: center;
-    color: white; /* Ensures text is readable over images */
-    font-weight: bold;
-}
-
-.panel h2 {
-    margin-bottom: 10px;
-    color: #6b426b;
-}
-
-.panel p {
-    display: none;
-    font-size: 0.9rem;
-}
-
-.panel:hover {
-    transform: scale(1.1);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-}
-
-.panel:hover p {
-    display: block;
-}
-
-#about-panel {
-    background-image: url('C:\Users\ws\Downloads\Книги эстетика.jpg'); /* Replace with your image URL */
-}
-
-/* Tasks Panel */
-#tasks-panel {
-    background-image: url('C:\Users\ws\Downloads\Poetry books 💅🏻🤍🪐.jpg'); /* Replace with your image URL */
 }

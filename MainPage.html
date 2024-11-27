@@ -7,24 +7,40 @@
     <link rel="stylesheet" href="MainPage.css">
 </head>
 <body>
-    
-    <nav class="navbar">
-        <div class="logo">Plot Twist</div>
-       
-        <button class="register-btn" onclick="location.href='register.html'">Register</button>
-
-    </nav>
-    
-    <main class="main-content">
-        <div class="panel" id="about-panel">
-            <h2>About the Page</h2>
-            <p>Explore the purpose of Plot Twist and how it connects book enthusiasts!</p>
+    <header class="navbar">
+        <div class="logo-section">
+            <img src="https://cdn-icons-png.flaticon.com/128/2702/2702184.png" alt="Plot Twist Logo" class="logo">
+            <span class="site-name">Plot Twist</span>
         </div>
-        <div class="panel" id="tasks-panel">
-            <h2>Tasks to Do</h2>
-            <p>Participate in challenges, join clubs, and share reviews!</p>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#books">Books</a></li>
+                <li><a href="#discussions">Discussions</a></li>
+                <li><a href="#competitions">Competitions</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <button onclick="location.href='login.html'" class="btn">Login</button>
+            <button onclick="location.href='Register.html'" class="btn">Register</button>
         </div>
+    </header>
+    <main>
+        <section id="about">
+            <h1>Welcome to Plot Twist</h1>
+            <div class="info-sections">
+                <div class="info-card">
+                    <h2>What is Plot Twist?</h2>
+                    <p>Plot Twist is a virtual book club where book enthusiasts gather to discuss novels, share reviews, and participate in engaging activities.</p>
+                    <img src="https://cdn-icons-png.flaticon.com/128/3429/3429151.png" alt="Book Club" class="icon">
+                </div>
+                <div class="info-card">
+                    <h2>What We Do</h2>
+                    <p>We organize podcasts, book reviews, and exciting competitions for our club members. Join us to explore the world of books!</p>
+                    <img src="https://t4.ftcdn.net/jpg/03/19/74/85/240_F_319748540_1DjIMB2DD3UX02uqobgIgIV16WkvrPzi.jpg" alt="Activities" class="icon">
+                </div>
+            </div>
+        </section>
     </main>
-    <script src="script.js"></script>
 </body>
 </html>
