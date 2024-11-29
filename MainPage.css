@@ -87,11 +87,11 @@ h1 {
 }
 
 .info-card {
-    background-color: #fff;
+    background-color: #e7b9dfe1;
     border-radius: 30px;
     padding: 40px;
     width: 500px;
-    height: 450px;
+    height: 350px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
