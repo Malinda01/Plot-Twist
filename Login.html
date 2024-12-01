@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Plot Twist</title>
+    <link rel="stylesheet" href="MainPage.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(120deg, #e0c3fc, #8ec5fc);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 15px 50px;
+            background-color: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .logo-section {
+            display: flex;
+            align-items: center;
+        }
+        .logo {
+            width: 40px;
+            margin-right: 10px;
+        }
+        .site-name {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #6a0572;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        .nav-links li a {
+            text-decoration: none;
+            color: #6a0572;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .nav-links li a:hover {
+            color: #ff6f91;
+        }
+        .form-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+        .form-container h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #6a0572;
+        }
+        .login-form label {
+            display: block;
+            margin: 15px 0 5px;
+            font-weight: bold;
+            color: #6a0572;
+        }
+        .login-form input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+        .login-btn, .back-btn {
+            display: inline-block;
+            width: 100%;
+            padding: 10px;
+            background-color: #6a0572;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+        .login-btn:hover, .back-btn:hover {
+            background-color: #ff6f91;
+        }
+        .back-btn {
+            background-color: #8ec5fc;
+            color: #6a0572;
+        }
+        .back-btn:hover {
+            background-color: #cc8bda;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo-section">
+            <img src="https://cdn-icons-png.flaticon.com/128/2702/2702184.png" alt="Plot Twist Logo" class="logo">
+            <span class="site-name">Plot Twist</span>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="MainPage.html">Home</a></li>
+                <li><a href="#books">Books</a></li>
+                <li><a href="#discussions">Discussions</a></li>
+                <li><a href="#competitions">Competitions</a></li>
+            </ul>
+        </nav>
+    </header>    
+    <main class="form-container">
+        <h1>Welcome Back!</h1>
+        <p>Login to continue exploring the world of books.</p>
+        <form class="login-form">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+            <button type="submit" class="login-btn">Login</button>
+        </form>
+        
+        <button onclick="location.href='MainPage.html'" class="back-btn">Back</button>
+    </main>
+</body>
+</html>
